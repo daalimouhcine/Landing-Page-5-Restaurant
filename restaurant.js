@@ -1,7 +1,9 @@
 const headerButton = document.querySelector(".h-c");
 const part3t = document.querySelector(".tc");
 const partb = document.querySelector(".bc");
-
+const search = document.querySelector(".search");
+const searchId = document.querySelector("#search-id");
+const searchInput = document.querySelector("#search-input");
 
 //------ Functions 
 
@@ -12,22 +14,32 @@ function endB(item) {
     item.classList.remove("on");
 }
 
-function Sbg(item) {
+function Sbg() {
     headerButton.classList.add("on-h");
 }
-function Ebg(item) {
+function Ebg() {
     headerButton.classList.remove("on-h");
 }
 
-function Sbt(item) {
+function Sbt() {
     part3t.classList.add("tc-on");
 }
-function Ebt(item) {
+function Ebt() {
     part3t.classList.remove("tc-on");
 }
-function Sbb(item) {
+function Sbb() {
     partb.classList.add("bc-on");
 }
-function Ebb(item) {
+function Ebb() {
     partb.classList.remove("bc-on");
 }
+
+
+searchId.addEventListener("click",function() {
+    if(searchInput.value !== "") {
+        alert(`(${searchInput.value}) This is the search word you want`);
+
+    } else if(searchInput.value === "") {
+        search.classList.toggle("search-on")
+    }
+});

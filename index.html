@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="restaurant.css">
     <link rel="icon" type="image/png" href="images/bg-t.png">
     <script src="https://kit.fontawesome.com/52c3d542f8.js" crossorigin="anonymous"></script>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Norican&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -24,8 +25,8 @@
                     <li onmouseover="startB(this)" onmouseout="endB(this)"><a href="#">Contact</a></li>
                 </ul>
                 <div class="search">
-                    <input type="input">
-                    <a href="#">#</a>
+                    <input type="text" name="search" id="search-input">
+                    <a href="#" id="search-id"><i class="fas fa-search"></i></a>
                 </div>
             </div>
         </nav>
@@ -33,7 +34,7 @@
             <div class="h-c">
                 <h1>Title Here</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-                <div class="h-c-button" onmouseover="Sbg(this)" onmouseout="Ebg(this)">
+                <div class="h-c-button" onmouseover="Sbg()" onmouseout="Ebg()">
                     <a href="#">order now</a>
                 </div>
             </div>
@@ -84,7 +85,7 @@
             <div class="top-content">
                 <h3>Oriental Taste</h3>
                 <p>Lorem ipsum dolor sit aet, consectetur adipiscing elit. Vivamus lacinia ofio vitae vestibullum vestiulum.</p>
-                <div class="tc" onmouseover="Sbt(this)" onmouseout="Ebt(this)">
+                <div class="tc" onmouseover="Sbt()" onmouseout="Ebt()">
                     <a href="#">order now</a>
                 </div>
             </div>

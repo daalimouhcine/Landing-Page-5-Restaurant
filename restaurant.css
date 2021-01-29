@@ -12,7 +12,6 @@ li {
 
 /*----- Start Nav -----*/
 nav {
-    width:100%;
     height:100px;
     background: transparent;
     display:flex;
@@ -28,17 +27,18 @@ nav .menu-bar {
     width:60%;
     display: flex;
     flex-direction: row;
-    margin:0 5vw;
     justify-content: space-between;
+    margin:0 2vw;
     z-index: 2;
+    background-color: rgb(179, 179, 71);
 }
 nav .menu-bar .menu-list {
+    min-width: 70%;
     display:flex;
     flex-direction:row;
+    justify-content: space-between;
     z-index: 2;
-}
-nav .menu-bar .menu-list li {
-    list-style: none;
+    background-color: blue;
 }
 nav .menu-bar .menu-list li a {
     display: block;
@@ -48,7 +48,7 @@ nav .menu-bar .menu-list li a {
     letter-spacing: 0.4mm;
     text-decoration: none;
     color:rgb(245, 240, 240);
-    padding:7px 15px;
+    padding:7px 5px;
     margin:0 1vw;
     position:relative;
     overflow: hidden;
@@ -69,17 +69,46 @@ nav .menu-bar .menu-list .on a::before  {
 }
 
 nav .menu-bar .search {
+    width: 23%;
+    position: relative;
+    overflow-x: hidden;
+    border-radius:5px;
+    background:red;
+    z-index: 2;
 }
 nav .menu-bar .search input {
-    display: none;
+    font-size:1.5rem;
+    display: block;
+    border:none;
+    width:100%;
+    height:100%;
+    top: 0;
+    right: -150%;
+    position:absolute;
+    background-color: #7f7770;
+    color:#302f2f;
+    border-radius: 5px;
+    padding:0px 45px 0 15px;
+    outline:none;
+    transition:right 500ms linear;
+}
+nav .menu-bar .search-on input {
+    right: 0%;
 }
 nav .menu-bar .search a {
-    font-size:1.6rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight:600;
     text-decoration: none;
     color:rgb(245, 240, 240);
-    padding:7px 15px;
+    position:absolute;
+    top:50%;
+    right: 50%;
+    transform: translate(0,-50%);
+    transition:right 400ms linear;
+}
+nav .menu-bar .search-on a {
+    right: 5%;
+}
+nav .menu-bar .search a i {
+    font-size:2rem;
 }
 /*----- End Nav -----*/
 
@@ -168,8 +197,9 @@ header .header-content .h-c  {
     max-width:700px;
 }
 header .header-content .h-c h1 {
-    font-size:7rem;
-    font-family: monospace;
+    font-size:7.5rem;
+    font-family: 'Norican', cursive;
+    font-weight:500;
     color:#ffc200;
     margin:0 0 30px 0;
 }
@@ -242,9 +272,9 @@ header .header-content .on-h .h-c-button::after {
     margin:100px 10px 30px;
 }
 .seller .head h2{
-    font-size:5rem;
-    font-weight: 700;
-    font-family: monospace;
+    font-size:6rem;
+    font-weight:500;
+    font-family: 'Norican', cursive;
     color:#302f2f;
     margin:10px 0;
 }
@@ -274,7 +304,8 @@ header .header-content .on-h .h-c-button::after {
 }
 .seller .seller-content .seller-product h4{
     font-size:2.1rem;
-    font-family: monospace;
+    font-family: 'Norican', cursive;
+    font-weight:500;
     margin:5px 0;
 }
 .seller .seller-content .seller-product p{
@@ -321,8 +352,9 @@ header .header-content .on-h .h-c-button::after {
     z-index: 2;
 }
 .taste .top-part .top-content h3 {
-    font-size: 4rem;
-    font-family: monospace;
+    font-size: 6.5rem;
+    font-family: 'Norican', cursive;
+    font-weight:500;
     color:#ffc200;
 }
 .taste .top-part .top-content p {
@@ -437,8 +469,9 @@ header .header-content .on-h .h-c-button::after {
     text-align: center;
 }
 .taste .center-part .center-head h2 {
-    font-size: 5rem;
-    font-family: monospace;
+    font-size: 6rem;
+    font-family: 'Norican', cursive;
+    font-weight:500;
     color:#ffc200;
     margin:0 0 10px 0;
 }
@@ -507,8 +540,9 @@ header .header-content .on-h .h-c-button::after {
     z-index: 2;
 }
 .taste .bottom-part .bottom-content h3 {
-    font-size: 4rem;
-    font-family: monospace;
+    font-size: 6.5rem;
+    font-family: 'Norican', cursive;
+    font-weight:500;
     color:#ffc200;
 }
 .taste .bottom-part .bottom-content p {
@@ -588,8 +622,9 @@ header .header-content .on-h .h-c-button::after {
     margin:20px 10px;
 }
 .lenora div h3 {
-    font-size: 5rem;
-    font-family: monospace;
+    font-size: 5.5rem;
+    font-family: 'Norican', cursive;
+    font-weight:500;
     max-width: 60%;
     color: #302f2f;
     margin:20px 10px;
@@ -660,8 +695,9 @@ header .header-content .on-h .h-c-button::after {
     position:relative;
 }
 .subscribe h3 {
-    font-size: 5rem;
-    font-family: monospace;
+    font-size: 5.5rem;
+    font-family: 'Norican', cursive;
+    font-weight:500;
     margin:20px 10px;
     max-width: 60%;
 }
