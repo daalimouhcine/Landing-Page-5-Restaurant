@@ -4,6 +4,8 @@ const partb = document.querySelector(".bc");
 const search = document.querySelector(".search");
 const searchId = document.querySelector("#search-id");
 const searchInput = document.querySelector("#search-input");
+const mobileBar = document.querySelector(".mobile-menu");
+const mobileBg = document.querySelector(".mobile-bg");
 
 //------ Functions 
 
@@ -42,4 +44,9 @@ searchId.addEventListener("click",function() {
     } else if(searchInput.value === "") {
         search.classList.toggle("search-on")
     }
+});
+
+mobileBar.addEventListener("click",function () {
+    mobileBg.classList.toggle("mobile-menu-on");
+    mobileBar.classList.toggle("mobile-bar-on");
 });
