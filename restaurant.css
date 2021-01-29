@@ -468,6 +468,7 @@ header .header-content .on-h .h-c-button::after {
     flex-direction: column;
     align-items: center;
     position:relative;
+    background-color:#302f2f;
 }
 .taste .center-part .center-head {
     max-width: 900px;
@@ -2065,6 +2066,9 @@ nav .logo {
     width:fit-content;
     margin:0 5vw;
 }
+nav .logo img {
+    width:25vw
+}
 nav .menu-bar {
     width:fit-content;
     display: flex;
@@ -2128,8 +2132,8 @@ nav .menu-bar .menu-list .on a::before  {
 }
 
 nav .menu-bar .search {
-    width: 32vw;
-    height:40px;
+    width: 35vw;
+    height:35px;
     position: relative;
     border-radius:5px;
     overflow-x: hidden;
@@ -2193,13 +2197,13 @@ nav .menu-bar .mobile-menu i{
 /*----- End Nav -----*/
 
 header {
-    height:500px;
+    height:450px;
 }
 
 /*----- Start Part-2 -----*/
 .taste {
     width:100%;
-    height:1600px;
+    height:1500px;
     display:flex;
     flex-direction: column;
     position:relative;
@@ -2232,7 +2236,7 @@ header {
     padding-top: 10px;
     width:50%;
     z-index: 2;
-    margin:0 0 0 60px;
+    margin:0 0 0 10px;
 }
 .taste .top-part .top-content h3 {
     font-size: 8vw;
@@ -2243,8 +2247,8 @@ header {
 .taste .top-part .top-content p {
     font-size: 3vw;
     font-family: monospace;
-    max-width: 750px;
-    margin:20px 20px 40px 0;
+    max-width: 100%;
+    margin:20px -10px 40px 0;
     color:rgb(247, 243, 243);
     letter-spacing: 0.3mm;
 }
